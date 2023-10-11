@@ -83,13 +83,12 @@ header nav a {
     font-size: 40px;
     line-height: 65px;
     background: linear-gradient(270deg, #FF9D42 0%, #FF6069 50.91%, #B16CEA 100%);
-    ;
-    font-weight: 700;
-    font-size: 55px;
-    line-height: 65px;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 65px;
 }
 
 .first-left p {
@@ -215,7 +214,26 @@ header nav a {
     padding: 20px ;
 }
 
-.card .small-text{
+.small-text{
     font-size: 12px;
     position: relative;
+}
+
+
+.card-1, .card-3{
+ 
+    border: 2px solid #161513;
+    background-color: #E9F0F5;
+}
+
+.card-2{
+    color: #fff;
+    border: 2px solid #161513;
+    background-color: #000;
+}
+.card-2 .price{
+    background: linear-gradient(270deg, #FF9D42 0%, #FF6069 50.91%, #B16CEA 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
