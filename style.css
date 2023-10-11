@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Syne', sans-serif;
+}
+
+/* :root {
+    --contrast: #222222;
+    --contrast-2: #575760;
+    --contrast-3: #b2b2be;
+    --base: #f0f0f0;
+    --base-2: #f7f8f9;
+    --base-3: #ffffff;
+    --accent: #1e73be;
+} */
+
+/* First Container's CSS Starts Here */
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px;
+    background-color: black;
+    color: white;
+
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+
+header nav ul li {
+    padding: 0px 14px;
+}
+
+header nav a {
+    text-decoration: none;
+    margin: 10px;
+    color: white;
+}
+
+.first-container {
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: row;
+    width: 100dvw;
+}
+
+.first-left {
+    width: 50%;
+    padding: 100px 10px 0px;
+}
+
+.first-left>* {
+    margin: 10px;
+}
+
+.first-left h1 {
+    color: #161513;
+    font-size: 78px;
+    line-height: 85px;
+}
+
+.first-left h2 {
+
+    font-size: 40px;
+    line-height: 65px;
+    background: linear-gradient(270deg, #FF9D42 0%, #FF6069 50.91%, #B16CEA 100%);
+    ;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 65px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.first-left p {
+    color: #161513;
+}
+
+
+
+.btn {
+    font-size: 15px;
+    font-weight: 600;
+    display: inline-block;
+    padding: 9px 32px;
+    cursor: pointer;
+    transition: .2s ease-out;
+}
+
+.btn-hello {
+    color: #fff;
+    background: linear-gradient(270deg, #FF9D42 0%, #FF6069 50.91%, #B16CEA 100%);
+    ;
+
+}
+
+.btn-work {
+    background: transparent;
+}
+
+.first-right {
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hero-image img {
+    width: 300px;
+    border: none;
+    outline: none;
+
+}
+
+/* Second Container's (Marquee Only) CSS Starts Here */
+
+.second-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: #3f3f3f;
+    background-color: #f6f6f6;
+    font-size: 50px;
+    margin: 40px 0px 0px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.second-container marquee i {
+    padding: 0px 26px 0px;
+}
+
+.second-container p {
+    margin: 15px;
+    font-size: 12px;
+    color: #3a3a3a;
+}
+
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+/* Third Container's CSS Starts Here */
+
+.third-container {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.third-container h2 {
+    font-size: 55px;
+    line-height: 62px;
+    color: #161513;
+    font-weight: 700;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    background: transparent;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.cards>* {
+    margin: 10px;
+    border: 2px solid #161513;
+    padding: 30px;
+    text-align: center;
+
+
+}
+
+.card > *{
+    padding: 5px;
+}
+
+.card .price{
+    font-size: 64px;
+    font-weight: 700;
+    padding: 20px ;
+}
+
+.card .small-text{
+    font-size: 12px;
+    position: relative;
+}
