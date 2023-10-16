@@ -18,9 +18,9 @@ body {
     background-color: #f6f6f6;
 }
 
-.wrapper {
-    margin-inline: 5dvw;
-}
+/* .wrapper {
+    padding-inline: 3%;
+} */
 
 h2 {
     font-size: 55px;
@@ -94,8 +94,6 @@ header nav a {
     justify-content: center;
     align-items: flex-start;
     padding: 10px;
-
-
 }
 
 .first-left>* {
@@ -103,7 +101,7 @@ header nav a {
 }
 
 .first-left h1 {
-    
+
     color: #161513;
     font-size: 70px;
     line-height: 85px;
@@ -277,34 +275,55 @@ header nav a {
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    height: 80dvh;
+    height: 90dvh;
     color: #3f3f3f;
     padding: 10px;
+    background: linear-gradient(270deg, #FF9D42 0%, #FF6069 50.91%, #B16CEA 100%);
+    
+}
 
+.third-container h2{
+    color: #E9F0F5;
 }
 
 .experiences {
+    height: 36dvh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     width: 100%;
     flex-wrap: wrap;
-    background-color: #E9F0F5;
     text-align: center;
-
+    
 }
 
 .experience {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding: 30px;
+    height: 100%;
+    width: 22%;
+    padding: 10px;
     text-align: left;
     color: #161513;
-    padding: 10px;
-    margin: 10px;
     font-size: 16px;
-    border: 2px solid #161513;
+    background-color: #E9F0F5;
 }
+
+.experience li{
+    font-family: ;
+    line-height: 1.4rem;
+}
+
+.experience span {
+    font-size: 9px;
+    color: #3a3a3a;
+    font-weight: 600;
+}
+.experience hr{
+    margin: 15px 0px;
+    border: .01px solid #ffb2b6;
+}
+
+
+
+
 
