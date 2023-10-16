@@ -3,6 +3,7 @@
 
 
 * {
+    text-wrap: wrap;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -382,10 +383,10 @@ footer {
     line-height: 72px;
     font-weight: 700;
     margin-inline: 10px;
-    
+
 }
 
-.footer-container-2{
+.footer-container-2 {
     background: #E9F0F5;
     width: 100%;
     height: auto;
@@ -395,12 +396,32 @@ footer {
     padding: 20px;
 }
 
-.footer-container-2 img{
+.footer-container-2 img {
     width: 40px;
     height: 40px;
 }
 
-.footer-container-2 span{
+.footer-container-2 span {
+    background: #f6f6f6;
     color: black;
     display: inline;
+}
+
+q {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    text-align: center;
+    width: 100%;
+    padding: 1%;
+    height: auto;
+    letter-spacing: .7px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    background: linear-gradient(270deg, #FF9D42 0%, #FF6069 50.91%, #B16CEA 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
