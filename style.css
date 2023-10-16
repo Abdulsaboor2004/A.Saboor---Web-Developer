@@ -10,10 +10,27 @@
     font-family: 'Syne', sans-serif;
 }
 
+
 html, body{
     width: 100%;
     height: 100%;
+    background-color: #f6f6f6;
 }
+
+.wrapper{
+    margin-inline: 40px;
+}
+
+h2{
+font-size: 55px;
+    line-height: 62px;
+    color: #161513;
+    font-weight: 700;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    background: transparent;
+}
+
 
 /* :root {
     --contrast: #222222;
@@ -71,7 +88,13 @@ header nav a {
 
 .first-left {
     width: 50%;
-    padding: 100px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+    
+   
 }
 
 .first-left>* {
@@ -110,9 +133,12 @@ header nav a {
     padding: 9px 32px;
     cursor: pointer;
     transition: .2s ease-out;
+    width: 150px;
+    
 }
 
 .btn-hello {
+    
     color: #fff;
     background: linear-gradient(270deg, #FF9D42 0%, #FF6069 50.91%, #B16CEA 100%);
     ;
@@ -174,8 +200,8 @@ header nav a {
     }
 }
 
-
-/* Third Container's CSS Starts Here */
+/* Thrid Container contains Marquee which is now commented */
+/* Fourth  Container's CSS Starts Here */
 
 .fourth-container {
     display: flex;
@@ -185,15 +211,7 @@ header nav a {
     height: 85dvh;
 }
 
-.fourth-container h2 {
-    font-size: 55px;
-    line-height: 62px;
-    color: #161513;
-    font-weight: 700;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    background: transparent;
-}
+
 
 .cards {
     display: flex;
@@ -206,7 +224,6 @@ header nav a {
     border: 2px solid #161513;
     padding: 30px;
     text-align: center;
-
 
 }
 
@@ -248,3 +265,38 @@ header nav a {
     -webkit-text-fill-color: white;
 }
 
+
+.third-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 80dvh;
+    color: #3f3f3f;
+    padding: 10px;
+
+}
+
+.experiences{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #E9F0F5;
+    text-align: center;
+
+}
+
+.experience{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 30px;
+    text-align: left;
+    color: #161513;
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    border: 2px solid #161513;
+}
