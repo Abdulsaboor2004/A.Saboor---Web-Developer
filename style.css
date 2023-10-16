@@ -18,9 +18,10 @@ body {
     background-color: #f6f6f6;
 }
 
-/* .wrapper {
-    padding-inline: 3%;
-} */
+.wrapper {
+    padding-top: 12dvh;
+    /* padding-inline: 3%; */
+}
 
 h2 {
     font-size: 55px;
@@ -44,6 +45,14 @@ h2 {
 } */
 
 /* First Container's CSS Starts Here */
+
+header {
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
 
 header nav {
     display: flex;
@@ -203,6 +212,64 @@ header nav a {
 }
 
 /* Thrid Container contains Marquee which is now commented */
+
+/* Third  Container's CSS Starts Here */
+
+.third-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 90dvh;
+    color: #3f3f3f;
+    padding: 10px;
+    background: linear-gradient(270deg, #FF9D42 0%, #FF6069 50.91%, #B16CEA 100%);
+
+}
+
+.third-container h2 {
+    color: #E9F0F5;
+}
+
+.experiences {
+    display: flex;
+    width: 100%;
+    height: 36dvh;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+
+}
+
+.experience {
+    height: 100%;
+    width: 22%;
+    padding: 10px;
+    text-align: left;
+    color: #161513;
+    font-size: 16px;
+    background-color: #E9F0F5;
+}
+
+.experience li {
+    font-size: 14px;
+    list-style-type: none;
+}
+
+.experience span {
+    font-size: 11px;
+    color: #3a3a3a;
+    font-weight: 600;
+}
+
+.experience hr {
+    margin: 15px 0px;
+    border: .01px solid #ffb2b6;
+}
+
+
 /* Fourth  Container's CSS Starts Here */
 
 .fourth-container {
@@ -270,60 +337,70 @@ header nav a {
 }
 
 
-.third-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    height: 90dvh;
-    color: #3f3f3f;
-    padding: 10px;
-    background: linear-gradient(270deg, #FF9D42 0%, #FF6069 50.91%, #B16CEA 100%);
-    
-}
+/* Fifth  Container's CSS Starts Here */
 
-.third-container h2{
-    color: #E9F0F5;
-}
 
-.experiences {
-    height: 36dvh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer's Css is Here */
+
+footer {
+    color: #f6f6f6;
     width: 100%;
-    flex-wrap: wrap;
-    text-align: center;
+    height: auto;
+    clear: both;
+    float: left;
+    background-color: #000;
+    padding-top: 100px;
+}
+
+.footer-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 90px;
+    background: linear-gradient(270deg, #FF9D42 0%, #FF6069 50.91%, #B16CEA 100%);
+}
+
+.footer-container h3 {
+    font-size: 64px;
+    color: #fff;
+    line-height: 72px;
+    font-weight: 700;
+    margin-inline: 10px;
     
 }
 
-.experience {
-    height: 100%;
-    width: 22%;
-    padding: 10px;
-    text-align: left;
-    color: #161513;
-    font-size: 16px;
-    background-color: #E9F0F5;
+.footer-container-2{
+    background: #E9F0F5;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
 }
 
-.experience li{
-    font-family: ;
-    line-height: 1.4rem;
+.footer-container-2 img{
+    width: 40px;
+    height: 40px;
 }
 
-.experience span {
-    font-size: 9px;
-    color: #3a3a3a;
-    font-weight: 600;
+.footer-container-2 span{
+    color: black;
+    display: inline;
 }
-.experience hr{
-    margin: 15px 0px;
-    border: .01px solid #ffb2b6;
-}
-
-
-
-
-
