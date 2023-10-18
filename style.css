@@ -9,6 +9,7 @@
     box-sizing: border-box;
     /* font-family: 'Poppins', sans-serif; */
     font-family: 'Syne', sans-serif;
+    flex-wrap: wrap;
 }
 
 
@@ -22,6 +23,11 @@ body {
 .wrapper {
     padding-top: 12dvh;
     /* padding-inline: 3%; */
+}
+
+.footer-container-2 .social-media-icons i {
+    color: #000;
+    margin: 5px;
 }
 
 h2 {
@@ -147,7 +153,7 @@ header nav a {
 
 }
 
-
+/* Second Container is no more.... */
 
 .btn-hello {
 
@@ -163,9 +169,6 @@ header nav a {
 
 .first-right {
     width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
 }
 
@@ -176,47 +179,10 @@ header nav a {
 
 }
 
-/* Second Container's (Marquee Only) CSS Starts Here */
+
+/* Second  Container's CSS Starts Here */
 
 .second-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    color: #3f3f3f;
-    background-color: #f6f6f6;
-    font-size: 50px;
-    margin: 40px 0px 0px;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-}
-
-.second-container marquee i {
-    padding: 0px 26px 0px;
-}
-
-.second-container p {
-    margin: 15px;
-    font-size: 12px;
-    color: #3a3a3a;
-}
-
-
-@keyframes marquee {
-    0% {
-        transform: translateX(100%);
-    }
-
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
-/* Thrid Container contains Marquee which is now commented */
-
-/* Third  Container's CSS Starts Here */
-
-.third-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -228,7 +194,7 @@ header nav a {
 
 }
 
-.third-container h2 {
+.second-container h2 {
     color: #E9F0F5;
 }
 
@@ -252,6 +218,27 @@ header nav a {
     color: #161513;
     font-size: 16px;
     background-color: #E9F0F5;
+    overflow-y: auto;
+}
+
+.experience::-webkit-scrollbar {
+    width: 6px;
+    background-color: #f5f5f5;
+  }
+  
+  .experience::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 3px;
+  }
+
+.lock-icon {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #3a3a3a; /* Adjust the color as needed */
+}
+
+.experience-4 {
+    filter: blur(2px);
 }
 
 .experience li {
@@ -271,14 +258,61 @@ header nav a {
 }
 
 
+/* Third  Container's CSS Starts Here */
+.third-container {
+    width: 100%;
+    text-align: center;
+    color: #161513;
+    font-size: 16px;
+}
+
+.projects {
+    width: 90%;
+    background: #E9F0F5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    color: #161513;
+    font-size: 16px;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+}
+
+.project img:hover {
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
+    transform: scale(1.01) translateZ(-100px); 
+}
+
+.project {
+    display: flex;
+    width: 100%;
+    background-color: #E9F0F5;
+    margin: 10px;
+}
+
+.project-left {
+    flex: 40%;
+    padding: 10px;
+}
+
+.project-right {
+    flex: 60%;
+    padding: 10px;
+}
+
 /* Fourth  Container's CSS Starts Here */
 
 .fourth-container {
-    display: flex;
-    justify-self: center;
-    align-items: center;
     flex-direction: column;
-    height: 85dvh;
+    height: 92dvh;
 }
 
 
@@ -344,18 +378,6 @@ header nav a {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* Footer's Css is Here */
 
 footer {
@@ -365,14 +387,13 @@ footer {
     clear: both;
     float: left;
     background-color: #000;
-    padding-top: 100px;
+    padding-block: 60px;
+    flex-direction: column;
 }
 
 .footer-container {
-    width: 100%;
+    width: 89%;
     height: auto;
-    display: flex;
-    align-items: center;
     padding: 90px;
     background: linear-gradient(270deg, #FF9D42 0%, #FF6069 50.91%, #B16CEA 100%);
 }
@@ -393,7 +414,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+
 }
 
 .footer-container-2 img {
@@ -408,9 +429,6 @@ footer {
 }
 
 q {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 12px;
     text-align: center;
     width: 100%;
@@ -425,3 +443,4 @@ q {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
