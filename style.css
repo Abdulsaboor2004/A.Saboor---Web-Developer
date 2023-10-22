@@ -20,8 +20,21 @@ body {
     background-color: #f6f6f6;
 }
 
+body::-webkit-scrollbar {
+    background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #C5CAE9 0%, #957DAD 50%, #65487C 100%);
+}
+
+
+
 .wrapper {
-    border: #0000007a 1px groove;
+    border: 1px solid transparent;
+    border-image: linear-gradient(170deg, #C5CAE9 0%, #957DAD 50%, #65487C 100%);
+    border-image-slice: 1;
+    border-image-width: 1px;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -57,7 +70,7 @@ h2 {
 /* First Container's CSS Starts Here */
 
 header {
-    
+
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -162,7 +175,6 @@ header nav a {
 
     color: #fff;
     background: linear-gradient(270deg, #C5CAE9 0%, #957DAD 50%, #65487C 100%)
-
 }
 
 .btn-work {
@@ -226,17 +238,18 @@ header nav a {
 .experience::-webkit-scrollbar {
     width: 6px;
     background-color: #f5f5f5;
-  }
-  
-  .experience::-webkit-scrollbar-thumb {
+}
+
+.experience::-webkit-scrollbar-thumb {
     background-color: #ccc;
     border-radius: 3px;
-  }
+}
 
 .lock-icon {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #3a3a3a; /* Adjust the color as needed */
+    color: #3a3a3a;
+    /* Adjust the color as needed */
 }
 
 .experience-4 {
@@ -290,7 +303,7 @@ header nav a {
 
 .project img:hover {
     filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
-    transform: scale(1.01) translateZ(-100px); 
+    transform: scale(1.01) translateZ(-100px);
 }
 
 .project {
@@ -445,4 +458,3 @@ q {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
