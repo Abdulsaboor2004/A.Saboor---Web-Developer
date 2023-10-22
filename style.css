@@ -41,10 +41,7 @@ body::-webkit-scrollbar-thumb {
     min-height: 100vh;
 }
 
-.footer-container-2 .social-media-icons i {
-    color: #000;
-    margin: 5px;
-}
+
 
 h2 {
     font-size: 55px;
@@ -103,12 +100,31 @@ header nav ul {
 
 header nav ul li {
     padding: 0px 14px;
+    position: relative;
 }
+
 
 header nav a {
     text-decoration: none;
     margin: 10px;
     color: white;
+}
+
+
+header nav ul li::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px; 
+    margin-block: -20px;
+    background: linear-gradient(270deg, #C5CAE9 0%, #957DAD 50%, #65487C 100%);
+    transition: width 0.3s; /* Add a transition for smooth animation */
+}
+
+header nav ul li:hover::after {
+    width: 100%; /* Expand the underline on hover */
 }
 
 .first-container {
@@ -457,4 +473,10 @@ q {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+
+.footer-container-2 .social-media-icons i {
+    color: #000;
+    margin: 5px;
 }
